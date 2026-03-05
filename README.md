@@ -113,7 +113,7 @@ python simulations/latency_e2e.py            # E2E latency P95
   author  = {Souadih, Kamal and Mir, Foudil and Meziane, Farid},
   journal = {Journal of Information Security and Applications},
   year    = {2026},
-  doi     = {10.5281/zenodo.10850224}
+  doi     = {....}
 }
 ```
 
@@ -121,3 +121,4 @@ python simulations/latency_e2e.py            # E2E latency P95
 
 *This reproducibility package is released for peer review transparency.
 The full GUI-based emulation platform is available upon request.*
+
