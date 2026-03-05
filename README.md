@@ -1,7 +1,7 @@
 # Secure-IIoT-DCOPA — Reproducibility Package
 
-[![CI](https://github.com/SecIIoT/Secure-IIoT-DCOPA/actions/workflows/ci.yml/badge.svg)](https://github.com/SecIIoT/Secure-IIoT-DCOPA/actions)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10850224.svg)](https://doi.org/10.5281/zenodo.10850224)
+[![CI]()
+[![DOI]()
 
 **Paper:** *Secure-IIoT-DCOPA: Tangle-Based Immutable Trust for Resilient Clustering in Critical IIoT*
 **Journal:** Journal of Information Security and Applications (JISA)
@@ -121,4 +121,5 @@ python simulations/latency_e2e.py            # E2E latency P95
 
 *This reproducibility package is released for peer review transparency.
 The full GUI-based emulation platform is available upon request.*
+
 
