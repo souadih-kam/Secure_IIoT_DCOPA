@@ -1,0 +1,50 @@
+# High Density Scenario - Stress Testing
+# Optimized for high node density and scalability testing
+
+network:
+  num_nodes: 500              # High node count
+  area_dimension: 50.0        # Smaller area = higher density
+  bs_position: [25.0, 25.0]   # Center of smaller area
+  percent_actuators: 15.0     # More actuators for coverage
+
+simulation:
+  max_rounds: 600             # Shorter due to computational load
+  num_runs: 15                # Fewer runs for speed
+  random_seed: 42
+
+attack:
+  malicious_percentage: 25.0  # Higher attack rate
+
+energy_model:
+  E_elec: 50.0e-9             # Standard electronics
+  E_fs: 10.0e-12              # Standard free-space
+  E_mp: 0.0013e-12            # Standard multipath
+  d0: 62.0                    # Adjusted for smaller area
+  initial_energy: 0.5          # Standard energy
+
+security:
+  key_renewal_interval: 75    # More frequent renewal
+  nonce_window_size: 40       # Moderate window
+  tesla_chain_length: 75
+
+protocol_params:
+  alpha: 0.5                  # Balanced energy/distance
+  beta: 0.5
+  delta: 0.005                # Smaller tie-breaking
+  gamma0: 0.35                # Higher base trust
+  sigma0: 0.20                # Higher dispersion threshold
+  k_sigmoid: 25.0             # Sharper sigmoid
+  theta_trust: 0.45           # Higher isolation threshold
+  delta_pos: 0.12             # Faster positive reinforcement
+  delta_neg: 0.12             # Balanced negative reinforcement
+
+tangle:
+  tip_limit: 15               # More concurrent tips
+  validation_cost: 1.5e-6     # Higher validation cost
+  storage_cost_per_byte: 1.5e-9
+
+export:
+  csv: true
+  json: true
+  plots: true
+  output_directory: results_high_density
