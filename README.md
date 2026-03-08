@@ -110,7 +110,7 @@ python simulations/latency_e2e.py            # E2E latency P95
 @article{seciiotdcopa2026,
   title   = {Secure-IIoT-DCOPA: Tangle-Based Immutable Trust for 
              Resilient Clustering in Critical IIoT},
-  author  = {Souadih, Kamal and Mir, Foudil and Meziane, Farid},
+  author  = {Souadih, Kamal and Mir, Foudil},
   journal = {Journal of Information Security and Applications},
   year    = {2026},
   doi     = {....}
@@ -121,5 +121,6 @@ python simulations/latency_e2e.py            # E2E latency P95
 
 *This reproducibility package is released for peer review transparency.
 The full GUI-based emulation platform is available upon request.*
+
 
 
