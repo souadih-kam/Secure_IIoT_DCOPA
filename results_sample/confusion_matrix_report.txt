@@ -1,0 +1,19 @@
+Secure-IIoT-DCOPA: Confusion Matrix Analysis
+==================================================
+
+Metric                 Absolute Value    Percentage
+True Positives (TP)    902520            100.0%
+False Positives (FP)   59136             100.0%
+True Negatives (TN)    7062264           100.0%
+False Negatives (FN)   896280            100.0%
+Precision              0.9385            93.85%
+Recall (Detection Rate) 0.5014            50.14%
+Specificity            0.9917            99.17%
+False Negative Rate (FNR) 0.4986            49.86%
+F1-Score               0.6532            65.32%
+Accuracy               0.9678            96.78%
+MCC                    0.7285            72.85%
+
+==================================================
+
+

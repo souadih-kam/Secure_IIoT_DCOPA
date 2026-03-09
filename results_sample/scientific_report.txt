@@ -1,0 +1,84 @@
+================================================================================
+SCIENTIFIC BATCH EXPERIMENT REPORT
+================================================================================
+Generated: 2025-08-17 06:55:34.625191
+Configuration Seed: 42
+
+EXPERIMENT CONFIGURATION
+- Num Nodes: 300
+- Area Dimension: 100.0
+- Bs Position: (50.0, 50.0)
+- Percent Actuators: 10.0
+- Max Rounds: 1200
+- Num Runs: 30
+- Random Seed: 42
+- Malicious Percentage: 20.0
+- Attack Types: ['Black Hole / Gray Hole internal', 'Data Tampering', 'Internal replay', 'Selective Forwarding internal', 'Internal Sybil', 'Spoofing / Impersonation', 'Cluster-Head Compromise', 'Trust challenge', 'Authentication', 'Collusion', 'Denial-of-Service (DoS)', 'Jamming', 'Eavesdropping (content)', 'IoT Command Twilight', 'Hello Flood']
+- Jammer Radius: 25.0
+- Dos Packet Flood Count: 10
+- Protocols: ['SecLEACH', 'MSCR', 'SECDCOPA', 'SecureIIoTDCOPA']
+- Energy Tx Elec: 5e-08
+- Energy Fs: 1e-11
+- Energy Mp: 1.3e-15
+- Energy D0: 87.7
+- Key Renewal Interval: 100
+- Nonce Window Size: 50
+- Tesla Chain Length: 100
+- Tangle Tip Limit: 10
+- Tangle Validation Cost: 1e-06
+- Tangle Storage Cost Per Byte: 1e-09
+- Export Csv: True
+- Export Json: True
+- Export Plots: True
+- Output Directory: experiment_results
+
+STATISTICAL ANALYSIS SUMMARY
+
+SECLEACH:
+  Avg Pdr             : Mean=0.3110 ± 0.0808, 95% CI=[0.2809, 0.3412]
+  Avg Throughput      : Mean=27.1962 ± 0.9089, 95% CI=[26.8569, 27.5356]
+  Detection Rate      : Mean=0.1306 ± 0.0016, 95% CI=[0.1300, 0.1312]
+  Final Energy        : Mean=127.3007 ± 0.2910, 95% CI=[127.1921, 127.4094]
+  Network Lifetime    : Mean=1200.0000 ± 0.0000, 95% CI=[1200.0000, 1200.0000]
+
+MSCR:
+  Avg Pdr             : Mean=0.3718 ± 0.0944, 95% CI=[0.3365, 0.4070]
+  Avg Throughput      : Mean=39.2052 ± 0.9477, 95% CI=[38.8513, 39.5591]
+  Detection Rate      : Mean=0.0026 ± 0.0011, 95% CI=[0.0022, 0.0030]
+  Final Energy        : Mean=124.0475 ± 0.3253, 95% CI=[123.9261, 124.1690]
+  Network Lifetime    : Mean=1200.0000 ± 0.0000, 95% CI=[1200.0000, 1200.0000]
+
+SECDCOPA:
+  Avg Pdr             : Mean=0.1784 ± 0.0225, 95% CI=[0.1700, 0.1868]
+  Avg Throughput      : Mean=40.5771 ± 0.1121, 95% CI=[40.5352, 40.6189]
+  Detection Rate      : Mean=0.0001 ± 0.0002, 95% CI=[0.0000, 0.0002]
+  Final Energy        : Mean=124.0391 ± 0.0641, 95% CI=[124.0152, 124.0631]
+  Network Lifetime    : Mean=1200.0000 ± 0.0000, 95% CI=[1200.0000, 1200.0000]
+
+SECUREIIOTDCOPA:
+  Avg Pdr             : Mean=0.9931 ± 0.0011, 95% CI=[0.9927, 0.9935]
+  Avg Throughput      : Mean=254.5522 ± 1.4478, 95% CI=[254.0116, 255.0929]
+  Detection Rate      : Mean=0.5014 ± 0.0185, 95% CI=[0.4945, 0.5083]
+  Final Energy        : Mean=30.7146 ± 0.7144, 95% CI=[30.4478, 30.9813]
+  Network Lifetime    : Mean=1200.0000 ± 0.0000, 95% CI=[1200.0000, 1200.0000]
+
+ATTACK ANALYSIS SUMMARY (PREVENTION, PROTECTION, DETECTION)
+
+SECLEACH:
+  - Jamming                        (Attempts: 900884) -> Prev:   0.00%, Prot:   0.00%, Det:   0.00%
+  - Spoofing / Impersonation       (Attempts: 3391) -> Prev:  48.63%, Prot:  48.63%, Det:  48.63%
+
+MSCR:
+  - Black Hole / Gray Hole internal (Attempts: 854) -> Prev:   0.00%, Prot:   0.00%, Det:  46.49%
+  - Jamming                        (Attempts: 900664) -> Prev:   0.00%, Prot:   0.00%, Det:   0.00%
+  - Selective Forwarding internal  (Attempts: 4297) -> Prev:   0.00%, Prot:   0.00%, Det:  45.31%
+
+SECDCOPA:
+  - Internal replay                (Attempts: 217) -> Prev:  53.46%, Prot:  53.46%, Det:  53.46%
+  - Jamming                        (Attempts: 899172) -> Prev:   0.00%, Prot:   0.00%, Det:   0.00%
+
+SECUREIIOTDCOPA:
+  - Collusion                      (Attempts: 3199) -> Prev:   0.00%, Prot:   0.00%, Det:  48.52%
+  - Eavesdropping (content)        (Attempts: 3883) -> Prev:   0.00%, Prot: 100.00%, Det: 100.00%
+  - Jamming                        (Attempts: 3772) -> Prev:   0.00%, Prot:   0.00%, Det:   0.00%
+  - Trust challenge                (Attempts: 22) -> Prev:  54.55%, Prot:   0.00%, Det:  54.55%
