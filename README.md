@@ -107,13 +107,18 @@ python simulations/latency_e2e.py            # E2E latency P95
 ## Citation
 
 ```bibtex
-@article{seciiotdcopa2026,
-  title   = {Secure-IIoT-DCOPA: Tangle-Based Immutable Trust for 
-             Resilient Clustering in Critical IIoT},
-  author  = {Souadih, Kamal and Mir, Foudil},
-  journal = {Journal of Information Security and Applications},
-  year    = {2026},
-  doi     = {....}
+@article{SOUADIH2026104502,
+title = {Secure-IIoT-DCOPA: Tangle-based immutable trust for resilient clustering in critical IIoT},
+journal = {Journal of Information Security and Applications},
+volume = {100},
+pages = {104502},
+year = {2026},
+issn = {2214-2126},
+doi = {https://doi.org/10.1016/j.jisa.2026.104502},
+url = {https://www.sciencedirect.com/science/article/pii/S2214212626001328},
+author = {Kamal Souadih and Foudil Mir},
+keywords = {Industrial internet of things (IIoT), Security and resilience, Distributed trust management (DLT/Tangle), Energy efficiency, Wireless sensor networks},
+abstract = {The Industrial Internet of Things (IIoT) increasingly exposes wireless sensor networks to complex security and reliability challenges in critical infrastructures. Traditional clustering protocols such as DCOPA achieve good energy efficiency but lack native mechanisms to ensure confidentiality, integrity, and resilience against coordinated threats. This paper presents Secure-IIoT-DCOPA, a security- and resilience-oriented architecture designed to protect IIoT environments without compromising network longevity. The proposed system integrates (1) a lightweight cryptographic engine combining ECC, ECDH, ECDSA, and ChaCha20-Poly1305 to ensure efficient data protection, and (2) DLT-TBSEER, a dynamic trust management framework based on a Tangle-inspired distributed ledger that enforces immutable reputations, proactive isolation of malicious nodes, and autonomous network reorganization for service continuity. Experimental validation was performed on a high-fidelity emulation platform with 300 nodes (20% malicious) over 1200 rounds using 30 Monte Carlo runs. Secure-IIoT-DCOPA achieved a packet delivery ratio (PDR) of 99.95% ± 0.05%, an average throughput of 254.55 ± 1.45 packets per round, and successfully isolated all malicious nodes (100%). Compared to reference protocols (SECDCOPA: 17.54%, SecLEACH: 30.22%, MSCR: 35.45%), our approach achieved a behavioral attack detection rate of 50.14%, compared to SecLEACH (13.33%), SECDCOPA (0.00%), and MSCR (0.00%), representing an absolute improvement of ∼+37 percentage points over SecLEACH and ∼+42% relative improvement over SECDCOPA (the primary comparison baseline; see Table 11 for per-protocol breakdown), and reduced relative energy cost by ∼−15% while maintaining maximal network lifetime. Through its integrated design, formal validation, and application-driven evaluation, Secure-IIoT-DCOPA demonstrates a robust and energy-aware framework capable of ensuring security, trust, and resilience in next-generation IIoT systems.}
 }
 ```
 
